@@ -144,7 +144,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2022-11-01' = {
 }
 
 resource image 'Microsoft.Compute/images@2023-03-01' = {
-  name: 'chr-7.10.2'
+  name: vhd
   location: location
   properties: {
     hyperVGeneration: 'V1'
