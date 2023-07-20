@@ -1,4 +1,5 @@
 # Azure Mikrotik Cloud Hosted Router
+Basic Mikrotik Router OS CHR deploy to Azure using Bicep for learning/experimenting purposes.
 
 ## Requirements
 * Azure Subscription
