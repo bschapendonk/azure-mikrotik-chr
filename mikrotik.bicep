@@ -82,14 +82,14 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2022-11-01' = {
   properties: {
     addressSpace: {
       addressPrefixes: [
-        '10.9.20.0/24'
+        subnetPrefix
       ]
     }
     subnets: [
       {
         name: 'snet-${name}'
         properties: {
-          addressPrefix: '10.9.20.0/24'
+          addressPrefix: subnetPrefix
           networkSecurityGroup: {
             id: networkSecurityGroup.id
           }
