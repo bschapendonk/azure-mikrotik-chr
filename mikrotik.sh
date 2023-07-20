@@ -6,11 +6,11 @@ export AZURE_DEFAULTS_GROUP="rg-mikrotik"
 
 NAME="mikrotik-chr"
 
-FILE=.password
-[ ! -f $FILE ] && cat >$FILE <<EOF
-PASSWORD=$(echo $RANDOM | md5sum | head -c 12)
-EOF
-source $FILE
+# FILE=.password
+# [ ! -f $FILE ] && cat >$FILE <<EOF
+# PASSWORD=$(echo $RANDOM | md5sum | head -c 12)
+# EOF
+# source $FILE
 
 FILE=.domainNameLabel
 [ ! -f $FILE ] && cat >$FILE <<EOF
