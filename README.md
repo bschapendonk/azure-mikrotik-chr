@@ -21,6 +21,6 @@ Basic Mikrotik Router OS CHR deploy to Azure using Bicep for learning/experiment
         * Create a Image from this storage account
         * Deploy a VM `Standard_B1ls` using this Image
     * It wil **fail on the deployment of `Microsoft.Compute/images`**, since there is no image uploaded yet
-        * Please upload a CHR image of the type `VirtualPC image` which can be downloaded https://mikrotik.com/download to the `chr` container in the storage account
+        * Please upload a CHR image of the type `VirtualPC image` which can be downloaded https://mikrotik.com/download to the `chr` container in the storage account and rerun `mikrotik.sh`
 * By default the Network Security Group only exposes SSH and WinBox from the internet and only from the IP that ran `mikrotik.sh`.
     
